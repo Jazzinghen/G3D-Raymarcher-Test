@@ -11,3 +11,12 @@
 *.lai
 *.la
 *.a
+
+# Project Files
+*.vcxproj*
+nbproject/*
+RaymarchTest.xcodeproj/*
+*.plist
+
+
+*.swp

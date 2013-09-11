@@ -1,0 +1,24 @@
+material raymarcher
+{
+    technique
+    {
+        pass 0
+        {
+            // shaders
+            vertexShader = res/raymarcher.vert
+            fragmentShader = res/raymarcher.frag
+            
+            // uniforms
+            u_worldViewProjectionMatrix = WORLD_VIEW_PROJECTION_MATRIX
+            u_inverseTransposeWorldViewMatrix = INVERSE_TRANSPOSE_WORLD_VIEW_MATRIX
+            u_diffuseColor = .5, .5, .5, 1.0
+
+            // render state
+            renderState
+            {
+                cullFace = true
+                depthTest = true
+            }
+        }
+    }
+}
